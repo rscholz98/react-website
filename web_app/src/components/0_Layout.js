@@ -39,7 +39,7 @@ const drawerWidth = 240;
 // Tab data with icons
 const tabs_primary = [
   { name: "Start", Icon: DashboardIcon },
-  { name: "Create Offer", Icon: CreateNewFolderIcon },
+  { name: "Data Loading", Icon: CreateNewFolderIcon },
   { name: "Open Offers", Icon: FolderCopyIcon },
   { name: "Order Overview", Icon: AssignmentIcon },
   { name: "Reports", Icon: BarChartIcon },
@@ -64,7 +64,7 @@ export default function ClippedDrawer() {
     switch (selectedPage) {
       case "Start":
         return <Start />;
-      case "Create Offer":
+      case "Data Loading":
         return <DataLoading />;
       case "Open Offers":
         return <OpenOffers />;
@@ -206,7 +206,7 @@ export default function ClippedDrawer() {
           title={"Richard Scholz"}
           link={"https://github.com/rscholz98/react-website"}
           sx={{
-            paddingTop: 4,
+            paddingTop: 10,
             paddingBottom: 1,
           }}
         />
